@@ -1,0 +1,122 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    width: 100%;
+}
+
+body {
+    background-color: rgb(108,54,177);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+span {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+}
+
+button {
+    background-color: rgb(108,54,177);
+    border-radius: 2rem;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.main {
+    width: 80rem;
+    margin: 5rem auto;
+    text-align: center;
+    background-color: rgb(69,35,114);
+    padding: 3rem;
+    border-radius: 2rem;
+}
+
+.main-grided {
+    background-color: rgb(108,54,177);
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
+.male,
+.female {
+    background-color: rgba(108,54,177,0.4);
+    cursor: pointer;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 4rem;
+    padding: 2rem;
+}
+.gender {
+    height: 10rem;
+}
+
+.main-grided:hover {
+    background-color: rgba(108,54,177,1);
+}
+
+.bar {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+#Range {
+    width: 100%;
+    cursor: ew-resize;
+    background:rgb(169, 141, 248);
+}
+
+.Operation {
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.Operation img{
+    height: 3rem;
+    cursor: pointer;
+}
+
+.imagebackg {
+    position: relative;
+    background: url(Img/sea-g0a45e5b0b_1280.jpg) center ;
+    background-size: cover;
+    height: 50vh;
+    width: 50vh;
+}
+
+.img2 {
+    background: rgba(1, 1, 1, 0.4);
+    border-radius: 2rem;
+    height: 56.2vh;
+    width: 56.2vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#resultado {
+    font-size: 4rem;
+    color:aqua
+}
+
+#recomendaciones {
+    font-size: 2rem;
+}
+
+#Imc {
+    font-size: 7rem;
+}

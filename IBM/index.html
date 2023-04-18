@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="style.css" as="style">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <title>BMI CALCULATOR</title>
+  <script src="scripts.js"></script>
+
+</head>
+
+<body>
+
+  <main class="main">
+
+    <h1>BMI CALCULATOR</h1>
+
+    <div class="grid">
+
+      <div class="main-grided female" onclick="Femenino()" id="Femenino">
+        <img class="gender" src="Img/female.png" >
+        <h2>Femenino</h2>
+      </div>
+
+      <div class="main-grided male" onclick="Masculino()" id="Masculino">
+        <img class="gender" src="Img/male.png">
+        <h2>Masculino</h2>
+      </div>
+
+      <div class="main-grided bar">
+        <p>Altura</p>
+        <span id="Altura"></span>
+        <label>mts</label>
+        <input oninput="Altura()" type="range" min="35" max="200" value="185" class="form-range" id="Range">
+      </div>
+
+      <div class="main-grided">
+        <p>Peso</p>
+        <span id="PrintPeso"></span>
+        <label>kgs</label>
+        <div class="Operation">
+          <img src="Img/minus (1).png" onclick="MenosPeso()">
+          <img src="Img/plus.png" onclick="MasPeso()">
+        </div>
+
+      </div>
+
+      <div class="main-grided">
+        <p>Edad</p>
+        <span id="PrintEdad"></span>
+        <label>años</label>
+        <div class="Operation">
+          <img src="Img/minus (1).png" onclick="MenosEdad()">
+          <img src="Img/plus.png" onclick="MasEdad()">
+        </div>
+
+      </div>
+
+    </div>
+
+    <button onclick="Calcular()">CALCULAR</button>
+
+  </main>
+
+</body>
+
+</html>

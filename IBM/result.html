@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Result</title>
+    <link rel="preload" href="style.css" as="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+</head>
+
+<body>
+    <div class="main imagebackg">
+        <div class="img2">
+            <br>
+            <div id="resultado"></div>
+            <br>
+            <div id="Imc"></div>
+            <br>
+            <h1>Recomendaciones:</h1>
+            <br>
+            <div id="recomendaciones"></div>
+        </div>
+    </div>
+
+
+    <script>
+        var resultado = document.getElementById('resultado');
+        var IMCC = document.getElementById('Imc');
+        var resultado2 = document.getElementById('recomendaciones');
+        resultado.innerHTML = localStorage.getItem('Resultado'); // Obtener y mostrar el valor de "Condicion" guardado en localStorage
+        IMCC.innerHTML = localStorage.getItem('IMC'); // Obtener y mostrar el valor de "IMC" guardado en localStorage
+        resultado2.innerHTML = localStorage.getItem('Resultado2'); // Obtener y mostrar el valor de "Recomendaciones" guardado en localStorage
+    </script>
+
+    <div class="main">
+        <button type="button" id="" onclick="ReDirect()">Regresar</button>
+    </div>
+
+
+</body>
+
+</html>
